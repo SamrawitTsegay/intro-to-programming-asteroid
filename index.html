@@ -3,16 +3,18 @@
     <head>
        <title>My first website</title>
        <meta name="keywords" content="HTML, CSS, JavaScript">
+       <link rel="stylesheet" href="css/index.css">
     </head>
     <body>
-        <section>
-<h1>About</h1>
+<section class = 'about'>
+<h1>My website</h1>
+<h2>About</h2>
 <p>Hey. My name is Samrawit Tsegay. I am programming student who loves coding and challenges in general. My privies profession was accounting with 3+ years of experience.</p>
 <img src="img/img-sam.png" alt="following my heart" width="100%" 
 height="300">
 </section>
-<section>
-<h1>Experience</h1>
+<section class="exp-list">
+<h2>Experience</h2>
 <ul>
 <li>CLIENT:	AWASH INTERNATIONAL BANK, ADDIS ABABA, ET</li>
 <li>ROLE:	                LOAN DOCUMENTATION SPECIALISTS</li>
@@ -26,13 +28,13 @@ height="300">
         <h2>skill</h2>
         <ul></ul>
     </section>
-<h1>Connect</h1>
+<h2 id ='Connect'>Connect</h1>
 <ul></ul>
 <li>Email:    samrawitekubay@gmail.com</li>
 <li>Github:   https://github.com/SamrawitTsegay</li>
 </ul>
 </section>
-<section>
+<section class ='leaveM'>
 <h2>Leave a Message</h2>
 <form name = 'leave_message' id = 'form'>
 <label>Name</label><br>
@@ -40,13 +42,14 @@ height="300">
 <label>Email</label><br>
 <input type = 'email' name = 'email' required = true><br>
 <label>Message</label><br>
-<textarea name = 'message'  required = true></textarea><br>
+<textarea  name = 'message'  required = true></textarea><br>
 <button type = 'submit' id = sub_button>Submit</button><br>
 </form>
 </section>
 <section id = 'messages'>
-<h2>Messages <button class = 'btn_hide'>Hide List</button></h2>
+<h2>Messages</h2>
 <ul></ul>
+<button id = 'btn_hide'>Hide List</button>
 </section>
 <footer></footer>
 <script src="js/index.js"></script>

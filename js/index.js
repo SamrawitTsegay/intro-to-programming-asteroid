@@ -18,8 +18,7 @@ skillsSection.appendChild(skill);
 }
 //document.getElementById("skillsList").appendChild(skills[0]);
 
-const submit = document.getElementById('sub_button');
-submit.style.background='#090';
+// const submit = document.getElementById('sub_button');
 const messageForm = document.getElementsByName('leave_message')[0];
 messageForm.addEventListener('submit', (event) => {
  event.preventDefault();
@@ -56,15 +55,14 @@ removeButton.innerText = 'remove';
 newMessage.appendChild(removeButton);
 //newMessage.appendChild('removeButton');
 removeButton.addEventListener("click", function(){
-    this.parentNode.remove();
+this.parentNode.remove();
 newMessage.value;
 messageForm.reset();
 removeButton.reset;
 });
 //});
                       //creat button for hide and show
-const btn_hide = document.querySelector('.btn_hide');
-btn_hide.style.background= 'yellow';
+const btn_hide = document.querySelector('#btn_hide');
 btn_hide.addEventListener('click', (event)=>{
  event.preventDefault();
 if(newMessage.style.display==='none'){
