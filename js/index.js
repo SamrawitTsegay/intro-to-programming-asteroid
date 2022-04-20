@@ -7,7 +7,7 @@ const copyright = document.createElement("p");
 copyright.innerHTML= `&copy;  ${thisYear} Samrawit Tsegay. `; 
 document.getElementsByTagName('footer')[0].appendChild(copyright);
 
-const skills = ["javascript", "HTML", "CSS"]; 
+const skills = ["javascript", "HTML", "CSS", "Github"]; 
 const skillsSection = document.getElementById('skills');
 const skillsList = document.querySelector('skillsSection');
 for(let i = 0; i < skills.length; i++){
