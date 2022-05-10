@@ -53,20 +53,18 @@ body {
         font-weight:bold ; 
         color: blue;
     }
-.exp-list{
-        background-color: #b0e54dde;
+/* .exp-list{
+        background-color: white;
         font-size: 18px;
         font-weight:normal ; 
-    }
-    .exp-list ul{
+    } */
+    /* .exp-list ul{
         font-size: 18px;
         font-weight:normal ; 
         font-style:normal;
         list-style: none;
-        list-style:square;
-        
-        
-    }
+        list-style:square;    
+    } */
 #skills{
         font-size: 18px;
         font-weight:normal ; 
@@ -167,4 +165,48 @@ margin-top: 40px;
     body {
         background-color: white;
     }
+} 
+
+.exp-list h2{
+    display:grid;
+    text-align: center;
+    padding: 60px;;
+}   
+.exp-list  {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 5px;
+    background-color: #2196F3;
+    padding: 15px;
+  }
+  
+  .exp-list .li{
+      display: grid;
+    background-color: rgba(255, 255, 255, 0.8);
+    list-style: none;
+    padding: 5px 0;
+    font-size: 18px;
+  }
+  .exp-list .li2{
+    display: grid;
+  background-color: rgba(126, 216, 150, 0.8);
+  list-style: none;
+  padding: 5px 0;
+  font-size: 18px;
 }
+#navBar{
+overflow: hidden;
+background-color:black;
+position: sticky;
+top: 0;
+z-index: 100;
+}
+ #navBar a {
+    float: 100%;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 70px;
+    text-decoration: none;
+    font-size: 20px;
+  }
+   
