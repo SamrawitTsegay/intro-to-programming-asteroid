@@ -3,13 +3,12 @@ body {
     color: #620606ec;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 2.6em;
-    margin: 60px;
+    margin: 20px;
 }
 .about h1{
-  background-color: #9933cc;
-  color: #ffffff;
-  padding: 0;
-  font-size: 30px;
+  /* background-color: #9933cc; */
+  color: #a11717;
+  font-size: 40px;
   font-weight:bold; 
   text-align: center;
   text-transform: uppercase;
@@ -23,21 +22,7 @@ body {
     font-size: 30px;
     font-weight:bold ; 
     color: blue;
-
  } 
- #skills h2 {
-    font-size: 30px;
-    font-weight:bold ; 
-    color: blue;
- }
- #skills li{
-     margin-left: 20px;
-    font-size: 18px;
-        font-weight:normal ; 
-        font-style:normal;
-        list-style: none;
-        list-style:square;
- }
  .messages h2 {
     font-size: 30px;
     font-weight:bold ; 
@@ -47,29 +32,31 @@ body {
     font-size: 30px;
     font-weight:bold ; 
     color: blue;
+    padding: 15px;
 }
  #Connect {
      font-size: 30px;
         font-weight:bold ; 
         color: blue;
+        padding: 25px;
     }
-/* .exp-list{
-        background-color: white;
-        font-size: 18px;
-        font-weight:normal ; 
-    } */
-    /* .exp-list ul{
-        font-size: 18px;
-        font-weight:normal ; 
-        font-style:normal;
-        list-style: none;
-        list-style:square;    
-    } */
+
 #skills{
+    display:flex ;
+        flex-direction: row;
         font-size: 18px;
         font-weight:normal ; 
         border-style: dotted dashed solid double;
+        padding: 20px;
     }
+    #skills h2 {
+        font-size: 30px;
+        font-weight:bold ; 
+        color: blue;
+        text-align: center;
+    
+     } 
+    
 input[type=text], #form{
     width: 100%;
     padding: 12px 20px;
@@ -113,6 +100,7 @@ textarea[name=message], #form{
     border: 4px dotted rgb(42, 119, 126);
     font-size: 18px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 15px;
 }
 #messages button{
     font-size: 16px;
@@ -176,7 +164,7 @@ margin-top: 40px;
     display: grid;
     grid-template-columns: auto auto;
     grid-gap: 5px;
-    background-color: #2196F3;
+    background-color: #c9d8e4;
     padding: 15px;
   }
   
