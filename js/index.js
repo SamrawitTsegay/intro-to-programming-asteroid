@@ -78,3 +78,21 @@ newMessage.reset;
 btn_hide.reset;
 
 })
+var githubRequest = new XMLHttpRequest();
+githubRequest.open("GET", "https://api.github.com/users/SamrawitTsegay/repos");
+  githubRequest.send();
+githubRequest.onreadystatechange = function(load) {
+    if (githubRequest.readyState === 4) {
+      var repositories = JSON.parse(githubRequest.responseText);
+      console.log(repositories);
+    }
+const projectSection = document.getElementById('projects');
+const projectList = projectSection.querySelector('ul');
+for(i = 0; i <= repositories.length; i++ ){
+const project = document.createElement('li');
+project.innerText = repositories[i];
+projectList.appendChild('project');
+}
+};
+
+  
