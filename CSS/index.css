@@ -3,16 +3,17 @@ body {
     color: #620606ec;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 2.6em;
-    margin: 60px;
+    margin: 0px;
+    margin-left: 60px;
+    margin-right: 60px;
 }
 .about h1{
-  background-color: #9933cc;
-  color: #ffffff;
+  color: #110f0f;
+  margin-top: 10px;
   padding: 0;
   font-size: 30px;
   font-weight:bold; 
   text-align: center;
-  text-transform: uppercase;
 }
 .about h2 {
     font-size: 30px;
@@ -25,18 +26,53 @@ body {
     color: blue;
 
  } 
+ .exp-list h2{
+    display:grid;
+    text-align: center;
+    padding: 60px;;
+}   
+.exp-list  {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 5px;
+    background-color: #2196F3;
+    padding: 15px;
+  }
+  
+  .exp-list .li{
+      display: grid;
+    background-color: rgba(255, 255, 255, 0.8);
+    list-style: none;
+    padding: 5px 0;
+    font-size: 18px;
+  }
+  .exp-list .li2{
+    display: grid;
+  background-color: rgba(126, 216, 150, 0.8);
+  list-style: none;
+  padding: 5px 0;
+  font-size: 18px;
+}
+#skills{
+    margin-top: 20px;
+    display:flex;
+
+    }
  #skills h2 {
     font-size: 30px;
     font-weight:bold ; 
     color: blue;
+    
  }
  #skills li{
-     margin-left: 20px;
+    justify-content: space-between;
     font-size: 18px;
         font-weight:normal ; 
         font-style:normal;
         list-style: none;
         list-style:square;
+        border-style: dashed solid;
+        padding: 20px 20px;
  }
  .messages h2 {
     font-size: 30px;
@@ -65,11 +101,6 @@ body {
         list-style: none;
         list-style:square;    
     } */
-#skills{
-        font-size: 18px;
-        font-weight:normal ; 
-        border-style: dotted dashed solid double;
-    }
 input[type=text], #form{
     width: 100%;
     padding: 12px 20px;
@@ -119,7 +150,7 @@ textarea[name=message], #form{
   font-weight: bold;
   color: white;
   padding: 7px 12px;
-  margin: 6px 0;
+  /*margin: 6px 0;*/
   background-color: black;
   border-radius: 3px;
 }
@@ -165,41 +196,13 @@ margin-top: 40px;
     body {
         background-color: white;
     }
-} 
-
-.exp-list h2{
-    display:grid;
-    text-align: center;
-    padding: 60px;;
-}   
-.exp-list  {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-gap: 5px;
-    background-color: #2196F3;
-    padding: 15px;
-  }
-  
-  .exp-list .li{
-      display: grid;
-    background-color: rgba(255, 255, 255, 0.8);
-    list-style: none;
-    padding: 5px 0;
-    font-size: 18px;
-  }
-  .exp-list .li2{
-    display: grid;
-  background-color: rgba(126, 216, 150, 0.8);
-  list-style: none;
-  padding: 5px 0;
-  font-size: 18px;
 }
 #navBar{
 overflow: hidden;
 background-color:black;
 position: sticky;
 top: 0;
-z-index: 100;
+/*z-index: 100;*/
 }
  #navBar a {
     float: 100%;
@@ -209,4 +212,10 @@ z-index: 100;
     text-decoration: none;
     font-size: 20px;
   }
+  #projects h2{
+    font-size: 30px;
+    font-weight:bold ; 
+    color: blue;
+
+}
    
