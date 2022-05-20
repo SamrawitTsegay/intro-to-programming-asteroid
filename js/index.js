@@ -78,21 +78,45 @@ newMessage.reset;
 btn_hide.reset;
 
 })
-var githubRequest = new XMLHttpRequest();
-githubRequest.open("GET", "https://api.github.com/users/SamrawitTsegay/repos");
-  githubRequest.send();
-githubRequest.onreadystatechange = function(load) {
-    if (githubRequest.readyState === 4) {
-      var repositories = JSON.parse(githubRequest.responseText);
-      console.log(repositories);
-    }
-const projectSection = document.getElementById('projects');
-const projectList = projectSection.querySelector('ul');
-for(i = 0; i <= repositories.length; i++ ){
-const project = document.createElement('li');
-project.innerText = repositories[i];
-projectList.appendChild('project');
-}
-};
 
-  
+
+// var githubRequest = new XMLHttpRequest();
+// githubRequest.open("GET", "https://api.github.com/users/SamrawitTsegay/repos");
+//   githubRequest.send();
+// githubRequest.onreadystatechange = function(load) {
+//     if (githubRequest.readyState === 4) {
+//       var repositories = JSON.parse(this.response)
+//       console.log(repositories);
+//     }
+//       const projectSection = document.getElementById('projects');
+//     const projectList = projectSection.querySelector('ul');
+//     for(i = 0; i <= repositories.length; i++ ){
+//     const project = document.createElement('li');
+//     project.innerHTML = `<a href = ${repositories[i]}>${repositories[i].name}</a>`
+//     projectList.appendChild(project);
+//     }
+
+  function ProjectFetch() {
+    fetch('https://api.github.com/users/SamrawitTsegay/repos')
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+        const dataFliter = data.filter((repo) =>
+        repo.name.includes('intro-to-programming')
+        )
+
+        const projectSection = document.querySelector('#projects')
+        const projectList = projectSection.querySelector('ul')
+
+        for (let repository of dataFliter) {
+          const project = document.createElement('li')
+          project.innerHTML = `<a class="link link--no-decor" href="${repository.html_url}">${repository.name}</a>`
+          projectList.appendChild(project)
+        }
+      })
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    ProjectFetch()
+  })
+//}
