@@ -2,149 +2,170 @@
 body {
     color: #620606ec;
     font-family: Arial, Helvetica, sans-serif;
-    line-height: 2.6em;
-    margin: 0px;
-    margin-left: 60px;
-    margin-right: 60px;
+}
+body {
+    background-color: rgb(244, 218, 222);
+    margin: 30px;
+  }
+#container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #333;
+    margin-top: 20px;
+    padding: 33px;
+  }
+  
+  #img {
+      padding-right: 10px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  }
+#text{
+    padding-left: 25px;
+    font-size: 100px;
+    font-family:Brush Script MT, Brush Script Std, cursive;
+    color: palevioletred;
+    animation: glow 1s ease-in-out infinite alternate;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 42px #0fa, 0 0 82px #0fa,0 0 92px #0fa;
 }
 .about h1{
   color: #110f0f;
-  margin-top: 10px;
-  padding: 0;
-  font-size: 30px;
+  margin-top: 40px;
+  font-size: 40px;
   font-weight:bold; 
   text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 .about h2 {
-    font-size: 30px;
+    font-size: 40px;
     font-weight:bold ; 
-    color: blue;
+    color: palevioletred;
+    padding-top: 30px;
 }
-.exp-list h1 {
-    font-size: 30px;
-    font-weight:bold ; 
-    color: blue;
-
- } 
- .exp-list h2{
-    display:grid;
-    text-align: center;
-    padding: 60px;;
-}   
-.exp-list  {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-gap: 5px;
-    background-color: #2196F3;
-    padding: 15px;
-  }
+#paragraph{
+    font-size: 20px;
+}
   
-  .exp-list .li{
-      display: grid;
-    background-color: rgba(255, 255, 255, 0.8);
+#Experience li{
+    display: inline-flex;
+    /* border: 4px dotted palevioletred; */
+    border: 2px solid black;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 15px;
     list-style: none;
-    padding: 5px 0;
-    font-size: 18px;
-  }
-  .exp-list .li2{
-    display: grid;
-  background-color: rgba(126, 216, 150, 0.8);
-  list-style: none;
-  padding: 5px 0;
-  font-size: 18px;
+    margin: 8px;
+    background-color: #9ce9e6;
+    color: #110f0f;
+}
+/* #Experience{
+    width: 900px;
+    height: 295px;
+    border: 1px solid black;
+    display: flex;
+    align-self: center;
+   background-color: rgb(136, 197, 147); 
+}*/
+#Experience h2{
+    padding-top: 40px;
+    color: palevioletred;
+    font-size: 30px;
 }
 #skills{
-    margin-top: 20px;
-    display:flex;
-
+    padding-top: 30px;
     }
  #skills h2 {
     font-size: 30px;
     font-weight:bold ; 
-    color: blue;
-    
+    color: palevioletred;
  }
  #skills li{
-    justify-content: space-between;
-    font-size: 18px;
-        font-weight:normal ; 
-        font-style:normal;
-        list-style: none;
-        list-style:square;
-        border-style: dashed solid;
-        padding: 20px 20px;
+     font-size: 20px;
+     font-weight: bold;
+  display: inline-flex;
+  height: 50px;
+  border: 2px solid black;
+  margin: 8px;
+  align-items: center;
+  border-radius: 10px;
+  background-color: #8fdad7;
+  padding: 12px 16px;
+  list-style: none;
+  color: #110f0f;
  }
- .messages h2 {
+ #messages h2 {
     font-size: 30px;
     font-weight:bold ; 
-    color: blue;
+    color: palevioletred;
 }
 .leaveM h2 {
     font-size: 30px;
     font-weight:bold ; 
-    color: blue;
+    color: palevioletred;
+    padding-top: 30px;
 }
  #Connect {
      font-size: 30px;
         font-weight:bold ; 
-        color: blue;
+        color: palevioletred;
+        padding-top: 30px;
     }
-/* .exp-list{
-        background-color: white;
-        font-size: 18px;
-        font-weight:normal ; 
-    } */
-    /* .exp-list ul{
-        font-size: 18px;
-        font-weight:normal ; 
-        font-style:normal;
-        list-style: none;
-        list-style:square;    
-    } */
+    #hoverPls li :hover{
+        background-color: palevioletred;
+    }
+    #form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;}
+
 input[type=text], #form{
-    width: 100%;
+    width: 60%;
     padding: 12px 20px;
-    margin: 8px 0;
     display: inline-block;
-    border: 1px;
     border-radius: 4px;
     box-sizing: border-box;
 }
 input[type=email], #form{
-    width: 100%;  
+    width: 60%;  
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
-    border: 1px;
     border-radius: 4px;
     box-sizing: border-box;
 }
 textarea[name=message], #form{
     width: 100%;
-    padding: 12px 20px;
+    padding: 30px 20px;
     margin: 8px 0;
     display: inline-block;
-    border: 1px;
     border-radius: 4px;
     box-sizing: border-box;  
 }
 
  #form button{
-    background-color: rgb(42, 213, 42);;
-    width: 100%;
+    background-color: black;
+    width: 20;
   font-size: 20px;
   font-weight: bold;
-  color: rgb(146, 25, 25);
-  padding: 14px 20px;
+  color: white;
+  padding: 7px 12px;
   margin: 8px 0;
   border: none;
   border-radius: 4px;
 }
-#messages{
-    border: 4px dotted rgb(42, 119, 126);
-    font-size: 18px;
+#messages ul{
+    width: 50%;
+    display: inline-flex;
+    flex-direction: column;
+    border: 4px dotted palevioletred;
+    border-radius: 30px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 50px 30px;
 }
+/*remove BUtton*/
 #messages button{
     font-size: 16px;
   font-weight: bold;
@@ -153,13 +174,29 @@ textarea[name=message], #form{
   /*margin: 6px 0;*/
   background-color: black;
   border-radius: 3px;
+  margin: 8px;
+    border: 1px;
 }
+
 footer{
-background-color: black;
-color: white;
+    display: inline-flex;
+    flex-direction:row-reverse;
+    width: 100%;
+background-color: #8fdad7;
+color: black;
 text-align: center;
-padding: 5px;
-margin-top: 40px;
+padding: 10px;
+margin-bottom: 0px;
+margin-top: 30px;
+}
+footer p{
+    align-items: flex-start;
+}
+.no-color{
+    padding-right: 0;
+}
+#footer-email{
+    padding-left: 370px;
 }
 .about p{
     font-size: 18px;
@@ -167,55 +204,102 @@ margin-top: 40px;
   font-family: 'Times New Roman', Times, serif;
   font-weight: 400;
 }
-/* for mobile */
-@media (max-width: 480px) {
-    body {
-        background-color: rgb(241, 159, 159);
-    }
-}
-/* low resolution tablet ipad */
-@media (min-width: 481px) and (max-width: 767px) {
-    body {
-        background-color: rgb(215, 215, 143);
-    }
-}
-/* tablet ipad portrait mode*/
-@media (min-width: 768px) and (max-width: 1024px){
-    body {
-        background-color: rgb(105, 208, 143);
-    }
-}
-/* laptop and desktom */
-@media (min-width: 1025px) and (max-width: 1280px){
-    body {
-        background-color: #83bfbfb9;
-    }
-}
-/* for larege screen */
-@media (min-width: 1281px) {
-    body {
-        background-color: white;
-    }
-}
 #navBar{
+    padding-top: 20px;
+    padding-bottom: 10px;
 overflow: hidden;
-background-color:black;
 position: sticky;
 top: 0;
-/*z-index: 100;*/
 }
  #navBar a {
-    float: 100%;
-    color: #f2f2f2;
+    color: black;
     text-align: center;
-    padding: 70px;
+    padding: 45px;
     text-decoration: none;
     font-size: 20px;
+
+  }
+  #navBar :hover {
+    background-color: palevioletred;
   }
   #projects h2{
     font-size: 30px;
     font-weight:bold ; 
-    color: blue;
-
+    color: palevioletred;
+    padding-top: 30px;
 }
-   
+#projects li{
+    font-size: 20px;
+     font-weight: bold;
+  display: inline-flex;
+  height: 50px;
+  border: 2px solid black;
+  margin: 8px;
+  align-items: center;
+  border-radius: 10px;
+  padding: 12px 16px;
+  list-style: none;
+  background-color: #98d5d3;
+}
+#projects li :hover {
+    background-color: palevioletred;
+  }
+
+#webPeg{
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    margin-left: 400px;
+    margin-right: 400px;
+    font-size: 40px;
+    font-weight:bold ;
+    text-align: center;
+    text-shadow: 2px 2px;
+    color: palevioletred;
+  background-image: linear-gradient(
+    -225deg,
+    #77d652 0%,
+    #4fe3df 29%,
+    #f4b1e2 67%,
+    #fff800 100%)
+}
+.all{
+margin-left: 60px;
+margin-right: 60px;
+padding: 15px;
+}
+  .cont {
+    display: flex;
+    height: 5%;
+    background-color: #333;
+  }
+  .word {
+    margin: auto;
+    color: white;
+    font: 700 normal 2.5em 'tahoma';
+    text-shadow: 5px 2px #222324, 2px 4px #222324, 3px 5px #222324;
+  }
+  .test {
+    background-color: #98d5d3;
+  }
+
+  /* For mobile phones: */
+  @media screen and (max-width: 412px) {
+    #skills li {
+        flex-direction: row;
+      width: 100%;
+    }
+    #projects li{
+        width: 100%;
+      }
+      #lm{
+        width: 100%;  
+      }  
+      #navBar{
+          display: none;
+      }
+      footer{
+          width: auto;
+      }
+  }  
+
+  

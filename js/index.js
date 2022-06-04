@@ -7,13 +7,13 @@ const copyright = document.createElement("p");
 copyright.innerHTML= `&copy;  ${thisYear} Samrawit Tsegay. `; 
 document.getElementsByTagName('footer')[0].appendChild(copyright);
 
-const skills = ["javascript", "HTML", "CSS", "Github"]; 
+const skills = ["javascript", "HTML", "CSS", "Github", "Ajax", "Fetch API"]; 
 const skillsSection = document.getElementById('skills');
-const skillsList = document.querySelector('skillsSection');
+const skillsList = skillsSection.querySelector('ul');
 for(let i = 0; i < skills.length; i++){
 const skill = document.createElement('li');
 skill.appendChild(document.createTextNode(skills[i]));
-skillsSection.appendChild(skill);
+skillsList.appendChild(skill);
 
 }
 //document.getElementById("skillsList").appendChild(skills[0]);
@@ -119,4 +119,14 @@ btn_hide.reset;
   document.addEventListener('DOMContentLoaded', () => {
     ProjectFetch()
   })
-//}
+
+      // change navbar color on scroll
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  if (document.documentElement.scrollTop > 100) {
+    document.getElementById("navBar").className = "test";
+  } else {
+    document.getElementById("navBar").className = "";
+  }
+}
